@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeff Centralized Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f6f9;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#2c3e50;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.site{
+    background:#fff;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.site h2{
+    margin-bottom:15px;
+    color:#1565c0;
+    border-bottom:2px solid #eee;
+    padding-bottom:8px;
+}
+
+.card{
+    display:block;
+    text-decoration:none;
+    color:#222;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:12px;
+    transition:.2s;
+}
+
+.card:hover{
+    background:#1565c0;
+    color:white;
+    transform:translateY(-2px);
+}
+
+.card small{
+    display:block;
+    margin-top:5px;
+    color:#777;
+}
+
+.card:hover small{
+    color:#eee;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Jeff Centralized Dashboard</h1>
+
+<div class="container">
+
+    <!-- Dumanjug -->
+    <div class="site">
+        <h2>📍 Dumanjug</h2>
+
+        <a class="card" href="http://192.168.195.205/admin" target="_blank">
+            <strong>🏠 UGBAMEN VENDO</strong>
+            <small>PISOWIFI DUMANJUG</small>
+        </a>
+
+        <a class="card" href="http://192.168.195.205:82" target="_blank">
+            <strong>📶 AP2 - Comfast EW71</strong>
+            <small>SSID: UGBAMEN2-PISOWIFI</small>
+        </a>
+
+        <a class="card" href="http://192.168.195.205:84" target="_blank">
+            <strong>📶 AP3 - TPLink EAP110</strong>
+            <small>SSID: UGBAMEN3-PISOWIFI</small>
+        </a>
+
+        <a class="card" href="http://192.168.195.205:83" target="_blank">
+            <strong>📶 AP4 - WavLink</strong>
+            <small>SSID: UGBAMEN4-PISOWIFI</small>
+        </a>
+
+        <a class="card" href="http://192.168.195.205:85" target="_blank">
+            <strong>🖧 Managed Switch</strong>
+            <small>TL-SG105E-DMJ</small>
+        </a>
+
+        <a class="card" href="https://192.168.195.205:86/admin.html" target="_blank">
+            <strong>🌐 PLDT ISP</strong>
+            <small>PLDT Fiber</small>
+        </a>
+
+    </div>
+
+    <!-- Alcantara -->
+    <div class="site">
+        <h2>📍 Alcantara</h2>
+
+        <a class="card" href="http://192.168.195.89/admin" target="_blank">
+            <strong>🏠 HASMEN VENDO</strong>
+            <small>PISOWIFI ALCANTARA</small>
+        </a>
+
+        <a class="card" href="http://192.168.195.89:91" target="_blank">
+            <strong>📶 AP1 - Ruijie EW1200</strong>
+            <small>SSID: 5G-HASMEN-PISOWIFI</small>
+        </a>
+
+        <a class="card" href="http://192.168.195.89:92" target="_blank">
+            <strong>📶 AP2 - TPLink EAP110</strong>
+            <small>SSID: HASMEN2-PISOWIFI</small>
+        </a>
+
+        <a class="card" href="https://192.168.195.89:93/admin.html" target="_blank">
+            <strong>🌐 PLDT ISP</strong>
+            <small>PLDT Fiber</small>
+        </a>
+
+    </div>
+
+    <!-- Negros Tiangge -->
+    <div class="site">
+        <h2>📍 Negros Tiangge</h2>
+
+        <a class="card" href="http://192.168.195.71/admin" target="_blank">
+            <strong>🏠 MPOMPEY VENDO</strong>
+            <small>PISOWIFI NGR-STORE </small>
+        </a>
+
+        <a class="card" href="http://192.168.195.71:71" target="_blank">
+            <strong>📶 AP2 - TPLink EAP110</strong>
+            <small>SSID: MPOMPEY2-PISOWIFI</small>
+        </a>
+
+        <a class="card" href="http://192.168.195.71:72" target="_blank">
+            <strong>🖧 Ruijie Gateway LB</strong>
+            <small>EG105G-V2</small>
+        </a>
+
+        <a class="card" href="https://192.168.195.71:73/login.html" target="_blank">
+            <strong>🌐 ISP1: Fil Products</strong>
+            <small>PLDT Fiber</small>
+        </a>
+
+        <a class="card" href="http://192.168.195.71:74/" target="_blank">
+            <strong>🌐 ISP2: LTE GOMO</strong>
+            <small>ZLT-S10G</small>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
