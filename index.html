@@ -6,71 +6,359 @@
 <title>Jeff Centralized Dashboard</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f4f6f9;
-    padding:30px;
+
+    font-family:
+    "Segoe UI",
+    Arial,
+    Helvetica,
+    sans-serif;
+
+    background:
+    linear-gradient(
+        135deg,
+        #020617,
+        #0f172a,
+        #172554
+    );
+
+    min-height:100vh;
+
+    padding:35px;
+
+    color:#e5e7eb;
+
 }
+
+
+/* HEADER */
 
 h1{
+
     text-align:center;
-    margin-bottom:30px;
-    color:#2c3e50;
+
+    margin-bottom:35px;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:white;
+
+    letter-spacing:1px;
+
+    text-shadow:
+    0 0 20px rgba(56,189,248,.5);
+
 }
+
+
+
+/* MAIN GRID */
 
 .container{
+
+    max-width:1400px;
+
+    margin:auto;
+
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    grid-template-columns:
+    repeat(
+        auto-fit,
+        minmax(330px,1fr)
+    );
+
     gap:25px;
+
 }
+
+
+
+/* LOCATION BOX */
 
 .site{
-    background:#fff;
-    border-radius:12px;
-    padding:20px;
-    box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+    background:
+    rgba(15,23,42,.75);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+
+    padding:22px;
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+
+    0 10px 30px
+    rgba(0,0,0,.35);
+
+    transition:.3s;
+
 }
+
+
+.site:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+    0 20px 40px
+    rgba(0,0,0,.5);
+
+}
+
+
+
+/* LOCATION TITLE */
 
 .site h2{
-    margin-bottom:15px;
-    color:#1565c0;
-    border-bottom:2px solid #eee;
-    padding-bottom:8px;
+
+    margin-bottom:18px;
+
+    padding-bottom:12px;
+
+    color:#38bdf8;
+
+    font-size:22px;
+
+    border-bottom:
+
+    1px solid
+    rgba(255,255,255,.15);
+
 }
+
+
+
+/* DEVICE CARD */
 
 .card{
+
     display:block;
+
     text-decoration:none;
-    color:#222;
-    background:#fafafa;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:15px;
-    margin-bottom:12px;
-    transition:.2s;
+
+    color:white;
+
+    background:
+
+    rgba(30,41,59,.8);
+
+
+    border:
+
+    1px solid
+    rgba(255,255,255,.08);
+
+
+    border-radius:14px;
+
+
+    padding:16px;
+
+
+    margin-bottom:14px;
+
+
+    transition:
+    .25s ease;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
 }
+
+
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:#38bdf8;
+
+}
+
+
+
+/* CARD HOVER */
 
 .card:hover{
-    background:#1565c0;
-    color:white;
-    transform:translateY(-2px);
+
+
+    background:
+
+    rgba(37,99,235,.8);
+
+
+    transform:
+
+    translateX(8px);
+
+
+    box-shadow:
+
+
+    0 0 20px
+    rgba(56,189,248,.35);
+
+
 }
+
+
+
+/* TITLE */
+
+.card strong{
+
+    font-size:16px;
+
+    display:block;
+
+    letter-spacing:.3px;
+
+}
+
+
+
+/* DESCRIPTION */
 
 .card small{
+
     display:block;
-    margin-top:5px;
-    color:#777;
+
+    margin-top:7px;
+
+    color:#94a3b8;
+
+    font-size:13px;
+
 }
 
+
+
 .card:hover small{
-    color:#eee;
+
+    color:#e0f2fe;
+
 }
+
+
+
+/* DEVICE COLOR ACCENTS */
+
+
+/* Vendo */
+
+.card:has(strong:first-child){
+
+}
+
+
+
+/* Better spacing */
+
+a.card{
+
+    cursor:pointer;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+
+body{
+
+padding:15px;
+
+}
+
+
+h1{
+
+font-size:30px;
+
+}
+
+
+
+.container{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.site{
+
+padding:18px;
+
+}
+
+
+}
+
+
+
+
+
+/* CUSTOM SCROLLBAR */
+
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+background:#020617;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+background:#2563eb;
+
+border-radius:20px;
+
+}
+
+
 </style>
 
 </head>
